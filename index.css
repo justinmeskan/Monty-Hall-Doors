@@ -1,0 +1,68 @@
+@keyframes openDoor{
+	from{
+		transform-origin: 0% 0% 0;
+		transform-style: preserve-3d;
+		transform: rotateY(0deg) skewY(0deg);
+		perspective-origin: right;
+		perspective:1000px;
+	}
+	to{
+		transform-origin: 0% 0% 0;
+		transform-style: preserve-3d;
+		transform: rotateY(80deg) skewY(10deg);
+		perspective-origin: right;
+		perspective:1000px;
+
+	}
+}
+body{
+	display:flex;
+	flex-flow: column nowrap;
+	align-content: : center;
+}
+#banner{
+	text-align: center;
+}
+#backgrounds{
+	text-align:center;
+	position:absolute;
+	z-index:-1;
+	left:350px;
+	top:100px;
+}
+.door{
+	background-image:url('door.jpg');
+	background-size:175px 350px;
+	height:350px;
+	width:175px;
+	align-self: center;
+	display:inline-block;
+}
+
+.doorbg{
+	background-image:url('elmo.jpeg');
+	background-size:175px 350px;
+	height:350px;
+	width:175px;
+	align-self: center;
+	display:inline-block;
+}
+#doorGroup{
+/*	display:flex;
+	flex-flow: row nowrap;
+	justify-content: space-around;*/
+	text-align: center;
+	position:absolute;
+	left:350px;
+	top:100px;
+}
+
+.animator{
+	animation: openDoor;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+#door1{
+	
+}
