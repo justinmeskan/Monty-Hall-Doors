@@ -6,9 +6,10 @@
 	}
 	var goodDoor = randGen('#doorbg1', '#doorbg2', '#doorbg3');
 	$(goodDoor).css({'background-image':'url(moneygirl.jpeg)'});
-	console.log('secert door', goodDoor);
+	var winningDoor = goodDoor.slice(goodDoor.length - 1);
 	//default door clicks
 	$('.door').on('click', function(e){
+		var doorYouPicked = this.id.slice(this.id.length - 1);
 		var door1 = $('#door1').hasClass('open');
 		var door2 = $('#door2').hasClass('open');
 		var door3 = $('#door3').hasClass('open');
@@ -62,5 +63,28 @@
 				$(this).addClass('o open')
 			}
 		}
+		if(doorYouPicked === winningDoor){
+			$('#message').text('YOU WON!!! You Pick the right door...Lucky You!!');
+			$('.door').off('click')
+		}
 	})
 })();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
