@@ -35,36 +35,56 @@ body{
 	min-width:650px;
 	display:flex;
 	flex-flow: column nowrap;
-	align-content: : center;
+	align-content: center;
+	background-image:url('castle4.jpeg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
 }
 #message{
-	width:400px;
+	-webkit-text-stroke: .5px white;
+	text-shadow: 5px 4px 7px #354;
+	width:600px;
 	text-align: center;
 	align-self:center;
-	font-size:24px;
-	min-height:150px;
+	font-size:36px;
+	min-height:200px;
+	margin-top:0px;
+	color:brown;
+	margin-bottom:0;
 }
 #banner{
+	-webkit-text-stroke: 1px white;
+	text-shadow: 5px 4px 7px #354;
 	text-align: center;
+	font-style: italic;
+    font-size: 49px;
+    color:brown;
 }
 #backgrounds{
-	text-align:center;
-	position:relative;
-	z-index:-1;
-	left:0px;
-	top:176px;
+	text-align: center;
+    position: relative;
+    z-index: -1;
+    left: 0px;
+    top: 119px;
+}
+
+#group{
+	height:250px;
 }
 #doorGroup{
 	text-align: center;
-	position:relative;
-	left:0px;
-	top:-178px;
+	position: relative;
+	left: 0px;
+	top: -135px;
+	overflow-y: hidden;
+	height: 250px;
 }
+
 .door{
 	background-image:url('door.jpg');
-	background-size:175px 350px;
-	height:350px;
-	width:175px;
+	background-size:125px 250px;
+	height:250px;
+	width:125px;
 	align-self: center;
 	display:inline-block;
 	margin-right:20px;
@@ -73,9 +93,9 @@ body{
 .doorbg{
 	margin-right:20px;
 	background-image:url('elmo.jpeg');
-	background-size:175px 350px;
-	height:350px;
-	width:175px;
+	background-size:125px 250px;
+	height:250px;
+	width:125px;
 	align-self: center;
 	display:inline-block;
 }
@@ -91,11 +111,6 @@ body{
 	animation-duration: 2s;
 	animation-fill-mode: forwards;
 }
-
-#door1{
-	
-}
-
 
 
 
